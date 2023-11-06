@@ -30,6 +30,19 @@ import edu.wpi.first.wpilibj.SerialPort;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
+
+  public static final class Balancing{
+    public static final double kP = 0.0;
+    public static final double kI = 0.0;
+    public static final double kD = 0.0;
+
+    public static final double kBalancedThresholdDegrees = 0.0;
+
+    public static final double kBounceThreshold = 0.0;
+
+    public static final double kBalanceSpeedMod = 0.0;
+  }
+
   public static final class Sensors {
     public static final AHRS gyro = new AHRS(SerialPort.Port.kUSB);
   }
